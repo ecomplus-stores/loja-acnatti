@@ -3,45 +3,96 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "banner-slider",
-      "autoplay": 9000,
-      "full_width": false,
-      "slides": [
+      "type": "responsive-banner",
+      "img": "/img/uploads/vector.png"
+    },
+    {
+      "type": "apx_testimonials",
+      "title": "Quem se ama, se cuida",
+      "description": "A maneira favorita e mais gostosa de se cuidar é com os produtos Acnatti",
+      "testimonials": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z",
-          "mobile_img": "/img/uploads/headphone.webp"
+          "testimonial": {
+            "name": "Tuanne Queiroz",
+            "image": "/img/uploads/1e3176cb-21bd-42af-867c-540fdef86760.jpg",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          }
         },
         {
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
-          "start": "",
-          "end": "",
-          "mobile_img": "/img/uploads/passion.webp"
+          "testimonial": {
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.",
+            "name": "Milena Waltz",
+            "image": "/img/uploads/whatsapp-image-2022-05-26-at-11.42.11-am.jpeg"
+          }
+        },
+        {
+          "testimonial": {
+            "image": "/img/uploads/whatsapp-image-2022-05-25-at-7.20.08-pm.jpeg",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.",
+            "name": "Thiago Guimarães"
+          }
+        },
+        {
+          "testimonial": {
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.",
+            "image": "/img/uploads/whatsapp-image-2022-05-25-at-7.18.34-pm.jpeg",
+            "name": "Tamirys Ribeiro"
+          }
+        },
+        {
+          "testimonial": {
+            "name": "Thayná Ribeiro",
+            "image": "/img/uploads/whatsapp-image-2022-05-25-at-7.14.17-pm.jpeg",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          }
         }
       ]
     },
     {
-      "type": "info-bar",
-      "enabled": true
+      "type": "apx_productList_B",
+      "title": "Escolha seu <b>Kit Gummy</b>",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
+      "products": [
+        "628ec5e1ac0cb4200fe917e6",
+        "628ec606ac0cb4200fe9185c",
+        "628ec622ac0cb4200fe918b2",
+        "628ec63bac0cb4200fe918ee"
+      ]
     },
     {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "collection_id": null,
-      "sort": "offers",
-      "title": "",
-      "headless": false,
-      "limit": 12,
-      "page": 1
+      "type": "apx_productList_B",
+      "title": "Outros Produtos",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
+      "products": [
+        "628ec66fac0cb4200fe91939",
+        "628ec691ac0cb4200fe9195f",
+        "628ec6bbac0cb4200fe91991",
+        "628ec6deac0cb4200fe919b3"
+      ]
     },
     {
-      "type": "page-title",
-      "title": "Loja demo da E-Com Plus",
-      "description": "Loja de demonstração e testes da plataforma E-Com Plus e Storefront. Todos os produtos, preços e informações são meramente ilustrativos."
+      "type": "apx_faq",
+      "title": "Perguntas Frequentes",
+      "questions": [
+        {
+          "question": {
+            "response": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+          }
+        },
+        {
+          "question": {
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "response": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          }
+        },
+        {
+          "question": {
+            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+            "response": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+          }
+        }
+      ]
     }
   ]
 }
