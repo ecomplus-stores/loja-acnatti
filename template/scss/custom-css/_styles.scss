@@ -1,1 +1,169 @@
 // Add your custom CSS here.
+// Add your custom CSS here.
+@font-face {
+    font-family: 'NuberNext';
+    src: url("/assets/fonts/NuberNext-Bold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'NuberNext';
+    src: url("/assets/fonts/NuberNext-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NuberNext';
+    src: url("/assets/fonts/NuberNext-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Medel';
+    src: url("/assets/fonts/Medel.ttf") format("truetype");
+}
+
+
+.justify-content-end{justify-content: flex-end;}
+.justify-content-start{justify-content: flex-start;}
+.justify-content-center{justify-content: center;}
+.justify-content-between{justify-content: space-between;}
+.align-items-top{align-items: flex-start;}
+.align-items-center{align-items: center;}
+.align-items-bottom{align-items:flex-end}
+.text-center{text-align: center;}
+
+
+.ecom-credits,
+.footer__links{gap:30px}
+.footer{background:#fff}
+
+:root{
+    --primary: #5B5B5B;
+    --text: #5B5B5B;
+    --c-secondary: #FDCB6E;
+    --c-primary: #F0839A;
+    --lightGray: #f8f8f8;
+
+    --a_h1:76.29px;
+    --a_h2:61.04px;
+    --a_h3:48.03px;
+    --a_h4:39.06px;
+    --a_h5:31.25px;
+    --a_sub:25px;
+    --a_text:20px;
+    --a_p:16px;
+}
+.container{max-width:1260px;}
+.a_h1{font-size:var(--a_h1)};
+.a_h2{font-size:var(--a_h2)};
+.a_h3{font-size:var(--a_h3)};    
+.a_h4{font-size:var(--a_h4)};
+.a_h5{font-size:var(--a_h5)};        
+.a_sub{font-size:var(--a_sub)};
+.a_text{font-size:var(--a_text)};
+.a_p{font-size:var(--a_p)};
+.medel{font-family: 'Medel';}
+
+.bg-secondary{background-color:var(--c-secondary)}
+.bg-primary{background-color:var(--c-primary)}
+.border-primary{border:1px solid var(--c-primary)}
+.border-secondary{border:1px solid var(--c-secondary)}
+.circle{border-radius:50%}
+
+.text-primary{color:var(--c-primary)}
+.text-secondary{color:var(--c-secondary)}
+.text-white{color:#fff}
+.text-c{color:var(--text)}
+
+.font-bold{font-weight:700}
+.font-light{font-weight:300}
+
+body,
+a,
+p,
+div,
+span,
+i{
+    font-family: 'NuberNext', sans-serif;
+    color:var(--text);
+    font-weight:300;
+}
+.footer__social{gap:30px}
+.footer__social a{opacity:1;font-size:26px;margin:0}
+#footer-pages a{font-size:var(--a_p)}
+.footer__credits{padding-top:2rem;border-top-color:var(--lightGray)}
+.footer__credits span{font-size:calc(var(--a_p) * .8)}
+.footer{border-top:0}
+
+#faq{}
+#faq #faq-list{}
+#faq #faq-list .item{}
+#faq #faq-list .item .hat{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem;
+    border-bottom:1px solid var(--lightGray)
+}
+#faq #faq-list .item .hat > span{}
+#faq #faq-list .item .hat > button{
+    padding:0;
+    border: 0;
+    background:transparent;
+    transition:all .5s
+}
+#faq #faq-list .item.visible .content{padding:1.5rem;max-height:50vh}
+#faq #faq-list .item.visible button{transform:rotate(-90deg)}
+#faq #faq-list .item .content{
+    background:var(--lightGray);
+    padding:0rem;
+    max-height:0px;
+    transition:all .5s;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+#testimonials .item{
+    max-width:400px;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#testimonials .item .img{
+    border-radius:10px ;
+    overflow:hidden;
+    width:fit-content;
+    filter: drop-shadow(7px 7px 0px #F0839A);
+    margin:0 auto;
+}
+
+#testimonials .glide__track,
+#testimonials .glide__track .glide__slides{overflow:visible}
+
+.a_arrow{
+    opacity:1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height:48px;
+    width:48px;
+    padding:0
+}
+.a_arrow.glide__arrow--right svg{
+    transform:rotate(-180deg)
+}
+#testimonials-slider .glide__bullets{
+    bottom:auto;
+    position:relative;
+    gap:5px;
+}
+#testimonials-slider .glide__bullets .glide__bullet{
+    border:0;
+    height: 4px;
+    background:#f2f2f2;
+    width:75px;
+}
+#testimonials-slider .glide__bullets .glide__bullet:hover{
+    background-color:var(--c-primary)
+}
