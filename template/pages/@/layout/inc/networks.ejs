@@ -9,7 +9,6 @@ const networksWithColors = [
   ['pinterest', '#bd081c'],
   ['linkedin', '#0073b1']
 ]
-
 networksWithColors.forEach(([network, color]) => { %>
   <% if (contacts[network]) { %>
     <a
@@ -17,9 +16,9 @@ networksWithColors.forEach(([network, color]) => { %>
       target="_blank"
       rel="noopener"
       aria-label="<%= network %>"
-      style="color: <%= color %>"
+      class="text-primary"
     >
-      <i class="i-<%= network %>"></i>
+      <i class="i-<%= network %> text-primary"></i>
     </a>
   <% } %>
 <% }) %>

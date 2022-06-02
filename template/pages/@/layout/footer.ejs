@@ -3,9 +3,252 @@
 const footer = _.cms('footer') || {}
 const contacts = _.cms('contacts') || {}
 %>
-
-<footer class="footer py-3 py-lg-4 py-xl-5">
+<section id="testimonials" class="my-5 pb-5">
   <div class="container">
+    <div class="row mb-5 pb-4">
+      <div class="col-12 col-md-6">
+        <h3 class="a_title medel a_h3">
+          Quem se ama, se cuida
+        </h3>
+        <small class="a_sub font-light">
+          A maneira favorita e mais gostosa de se cuidar é com os produtos Acnatti
+        </small>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div id="testimonials-slider"
+          class="glide"
+          data-wait-mutation="false"
+          data-autoplay="true"
+          data-per-view="3"
+          data-per-view-md="3"
+          data-per-view-sm="1"
+          data-type="carousel"
+        >
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides products-carousel__list">
+            <li class="glide__slide item">
+              <div class="img">
+                <img src="https://via.placeholder.com/378x240" alt="">
+              </div>
+              <strong class="text-primary text-center d-block my-4 pt-2 a_text">Nome da Cliente</strong>
+              <p class="a_p">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+              </p>
+            </li>
+            <li class="glide__slide item">
+              <div class="img">
+                <img src="https://via.placeholder.com/378x240" alt="">
+              </div>
+              <strong class="text-primary text-center d-block my-4 pt-2 a_text">Nome da Cliente</strong>
+              <p class="a_p">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+              </p>
+            </li>
+            <li class="glide__slide item">
+              <div class="img">
+                <img src="https://via.placeholder.com/378x240" alt="">
+              </div>
+              <strong class="text-primary text-center d-block my-4 pt-2 a_text">Nome da Cliente</strong>
+              <p class="a_p">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+              </p>
+            </li>
+            <li class="glide__slide item">
+              <div class="img">
+                <img src="https://via.placeholder.com/378x240" alt="">
+              </div>
+              <strong class="text-primary text-center d-block my-4 pt-2 a_text">Nome da Cliente</strong>
+              <p class="a_p">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+              </p>
+            </li>
+            <li class="glide__slide item">
+              <div class="img">
+                <img src="https://via.placeholder.com/378x240" alt="">
+              </div>
+              <strong class="text-primary text-center d-block my-4 pt-2 a_text">Nome da Cliente</strong>
+              <p class="a_p">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+              </p>
+            </li>
+            <li class="glide__slide item">
+              <div class="img">
+                <img src="https://via.placeholder.com/378x240" alt="">
+              </div>
+              <strong class="text-primary text-center d-block my-4 pt-2 a_text">Nome da Cliente</strong>
+              <p class="a_p">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+              </p>
+            </li>
+          </ul>
+          <div class="glide__bullets mt-5" data-glide-el="controls">        
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>  
+          </div>
+
+          <div
+          class="glide__arrows glide__arrows--outer"
+          data-glide-el="controls"
+        >
+          <button
+            class="btn glide__arrow glide__arrow--left  a_arrow circle bg-primary"
+            data-glide-dir="<"
+            aria-label="<%= _.dictionary('previous') %>"
+          >
+            
+            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1L1 9L9 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+  
+          </button>
+          <button
+            class="btn glide__arrow glide__arrow--right a_arrow circle bg-primary"
+            data-glide-dir=">"
+            aria-label="<%= _.dictionary('next') %>"
+          >
+            
+            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1L1 9L9 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
+          </button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="faq" class="my-5 pb-5">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 col-md-10 text-center">
+        <h2 class="a_title medel a_h2 text-center">Perguntas Frequentes</h2>
+        <!-- <small class="a_sub font-light">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+        </small> -->
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10" id="faq-list">
+        <div class="item">
+          <div class="hat">
+            <span class="a_text">
+              Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+            </span>
+            <button type="button">              
+              <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.6665 1.66675L9.99984 10.0001L18.3332 1.66675" stroke="#D3D3D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+            </button>
+          </div>
+          <div class="content a_p">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+          </div>
+        </div>
+        <div class="item">
+          <div class="hat">
+            <span class="a_text">
+              Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+            </span>
+            <button type="button">              
+              <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.6665 1.66675L9.99984 10.0001L18.3332 1.66675" stroke="#D3D3D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+            </button>
+          </div>
+          <div class="content a_p">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+          </div>
+        </div>
+        <div class="item">
+          <div class="hat">
+            <span class="a_text">
+              Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
+            </span>
+            <button type="button">              
+              <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.6665 1.66675L9.99984 10.0001L18.3332 1.66675" stroke="#D3D3D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+            </button>
+          </div>
+          <div class="content a_p">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer pt-4">
+  <div class="container">
+    <div class="row my-4">
+      <div class="col text-center align-items-center  justify-content-center d-flex">
+        <img src="/img/uploads/logo_acnatti.png" alt="">
+      </div>
+    </div>
+    <div class="row my-4">
+      <div class="col">
+        <% if (footer.contacts.socials) { %>
+          <p class="footer__social align-items-center justify-content-center d-flex">
+            <%- await include('@/layout/inc/networks', { _, contacts }) %>
+          </p>
+        <% } %>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col justify-content-center">
+        <% if (footer.links_1.list_pages || footer.links_1.list.find(({ url }) => url)) { %>
+            <div id="footer-pages">
+              <% if (footer.links_1.list_pages) { %>
+                <ul class="footer__links d-flex justify-content-center align-items-center">
+                  <% (_.cms('pages') || []).forEach(slug => { %>
+                    <% const { title } = _.cms(`pages/${slug}`) %>
+                    <li>
+                      <a href="/pages/<%= slug %>">
+                        <%= title %>
+                      </a>
+                    </li>
+                  <% }) %>
+                </ul>
+              <% } else { %>
+                <ul class="footer__links d-flex justify-content-center align-items-center">
+                  <% footer.links_1.list.forEach(({ url, text }) => { %>
+                    <li>
+                      <a href="<%= url %>">
+                        <%= text %>
+                      </a>
+                    </li>
+                  <% }) %>
+                </ul>
+              <% } %>
+            </div>
+          
+        <% } %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col ">
+        <div class="footer__credits justify-content-center align-items-center pt-4">
+          <span class="text-c">
+            <%= footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
+          </span>
+        </div>
+        <div>
+          <%- await include('@/layout/inc/ecom-credits') %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">
     <div class="row">
       <div class="col-12 col-lg-auto order-lg-last pl-xl-4">
         <div class="footer__contacts">
@@ -64,54 +307,11 @@ const contacts = _.cms('contacts') || {}
             <% } %>
           </ul>
 
-          <% if (footer.contacts.socials) { %>
-            <p class="footer__social">
-              <%- await include('@/layout/inc/networks', { _, contacts }) %>
-            </p>
-          <% } %>
+          
         </div>
       </div>
 
-      <% if (footer.links_1.list_pages || footer.links_1.list.find(({ url }) => url)) { %>
-        <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4">
-          <a
-            class="footer__title"
-            data-toggle="collapse"
-            href="#footer-pages"
-            role="button"
-            aria-expanded="false"
-            aria-controls="footer-pages"
-          >
-            <%= footer.links_1.title || _.dictionary('pages') %>
-          </a>
-          <div class="collapse" id="footer-pages">
-            <% if (footer.links_1.list_pages) { %>
-              <ul class="footer__links">
-                <% (_.cms('pages') || []).forEach(slug => { %>
-                  <% const { title } = _.cms(`pages/${slug}`) %>
-                  <li>
-                    <i class="i-chevron-right"></i>
-                    <a href="/pages/<%= slug %>">
-                      <%= title %>
-                    </a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } else { %>
-              <ul class="footer__links">
-                <% footer.links_1.list.forEach(({ url, text }) => { %>
-                  <li>
-                    <i class="i-chevron-right"></i>
-                    <a href="<%= url %>">
-                      <%= text %>
-                    </a>
-                  </li>
-                <% }) %>
-              </ul>
-            <% } %>
-          </div>
-        </div>
-      <% } %>
+      
 
       <% if (footer.links_2.list_categories || footer.links_2.list.find(({ url }) => url)) { %>
         <div class="col-12 col-sm-6 col-lg col-xl-auto px-xl-4">
@@ -174,22 +374,7 @@ const contacts = _.cms('contacts') || {}
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="footer__credits">
-      <span>
-        <%= footer.credits || `© ${_.store.name} / ${contacts.address} / ${contacts.doc_number}` %>
-      </span>
-      <button
-        id="go-to-top"
-        class="btn btn-primary ml-3"
-        type="button"
-        aria-label="<%= _.dictionary('goToTop') %>"
-      >
-        <i class="i-chevron-up"></i>
-      </button>
-    </div>
+    </div> -->
+    
   </div>
 </footer>
-
-<%- await include('@/layout/inc/ecom-credits') %>
