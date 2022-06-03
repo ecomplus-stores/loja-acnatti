@@ -5,6 +5,11 @@
     src: url("/assets/fonts/NuberNext-Bold.otf") format("opentype");
     font-weight: bold;
 }
+@font-face {
+    font-family: 'NuberNext';
+    src: url("/assets/fonts/NuberNext-DemiBold.otf") format("opentype");
+    font-weight: 600;
+}
 
 @font-face {
     font-family: 'NuberNext';
@@ -32,6 +37,7 @@
 .align-items-center{align-items: center;}
 .align-items-bottom{align-items:flex-end}
 .text-center{text-align: center;}
+.text-upper{text-transform: uppercase;}
 
 
 .ecom-credits,
@@ -52,6 +58,7 @@
     --a_h5:31.25px;
     --a_sub:25px;
     --a_text:20px;
+    --a_btn:20px;
     --a_p:16px;
 }
 .container{max-width:1260px;}
@@ -62,6 +69,7 @@
 .a_h5{font-size:var(--a_h5)};        
 .a_sub{font-size:var(--a_sub)};
 .a_text{font-size:var(--a_text)};
+.a_btn{font-size:var(--a_btn)};
 .a_p{font-size:var(--a_p)};
 .medel{font-family: 'Medel';}
 
@@ -76,7 +84,9 @@
 .text-white{color:#fff}
 .text-c{color:var(--text)}
 
-.font-bold{font-weight:700}
+.line-height-reset{line-height:initial}
+.font-bolder{font-weight:bold}
+.font-bold{font-weight:600}
 .font-light{font-weight:300}
 
 body,
@@ -181,3 +191,52 @@ i{
 .listaProdutoB{
     background:var(--lightGray)
 }
+
+.chamadaImagem{}
+.chamadaImagem .bigImage img{
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform:translate(0,-50%)
+}
+.chamadaImagem .buttons a{
+    line-height:60px;
+    border-radius:5px;
+    font-weight:600
+}
+
+#a_header{
+    position:sticky;
+    top:0%;
+    left:0;
+    width:100%;
+    background:var(--c-primary);
+    z-index:10;
+}
+
+#a_header .a_menu{
+    list-style-type:none;
+    gap:3rem
+}
+#a_header .a_menu li{}
+
+#content > .sections > .responsive-baner:first-child{margin-top:0}
+
+#user-button,
+#cart-button{gap:.5rem}
+#cart-button .text-left,
+#user-button .text-left{
+    text-align:left;
+    font-size:14px;
+    line-height:20px;
+    color:#fff;
+}
+#cart-button .text-left,
+#cart-button .text-left *,
+#user-button .text-left,
+#user-button .text-left *{color:#fff;font-weight:300}
+#cart-button .text-left b,
+#cart-button .text-left b *,
+#user-button .text-left #user-name{font-weight:bold}
+#cart-button .text-left > span:last-child,
+#user-button .text-left .user_message{font-size:12px}

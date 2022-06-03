@@ -1,46 +1,44 @@
 <% 
-console.log(opt)
-//if (opt.questions) { 
-    %>
-    <section id="chamada" class="chamadaImagem my-5 pb-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6 text-align:center">
-                    <img src="<%- opt.testimonials[i].testimonial.image %>" alt="">
-                </div>
-                <div class="col-12 col-md-6"></div>
-            </div>
+if(opt.image && opt.title && opt.description){
+%>
+<section id="" class="chamadaImagem my-5 pt-5 pb-5">
+    <div class="container">
+      <div class="row mb-5 pb-4">
+        <div class="col-12 col-md-5 bigImage">
+          <img src="<%- opt.image %>" alt="">
         </div>
-        <div class="container">
-          <div class="row justify-content-center mb-5">
-            <div class="col-12 col-md-10 text-center">
-              <h2 class="a_title medel a_h2 text-center"><%- opt.title %></h2>
-              <!-- <small class="a_sub font-light">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-              </small> -->
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10" id="faq-list">
-                <% for (let i = 0; i < opt.questions.length; i++ ) { %>
-                <div class="item">
-                <div class="hat">
-                  <span class="a_text">
-                    <%- opt.questions[i].question.title %>
-                  </span>
-                  <button type="button">              
-                    <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.6665 1.66675L9.99984 10.0001L18.3332 1.66675" stroke="#D3D3D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>  
-                  </button>
+        <div class="col-12 col-md-6 offset-md-1">
+          <h3 class="a_title medel a_h3">
+            <%- opt.title %>
+          </h3>
+          <small class="a_sub font-light d-block mt-4">
+            <%- opt.description %>
+          </small>
+          <% if (opt.benefits.length) {%>
+            <ul class="mt-5 mb-0 px-0">
+            <% for (let i = 0; i < opt.benefits.length; i++ ) { %>
+              <li class="item my-2 d-flex align-items-center d-block">
+                <div class="img mr-3">
+                  <img src="<%- opt.benefits[i].list_option.image %>" alt="">
                 </div>
-                <div class="content a_p">
-                    <%- opt.questions[i].question.response %>
-                </div>
+                <strong class="mt-1 line-height-reset d-block text-c a_sub font-bolder"><%- opt.benefits[i].list_option.text %></strong>
+              </li>
+            <% } %>
+            </ul>   
+          <% } %>
+          <% if (opt.buttons.length) {%>
+            <div class="d-flex align-items-center buttons mt-5">
+            <% for (let i = 0; i < opt.buttons.length; i++ ) { %>
+              <div class="mr-2">
+                <a href="<%- opt.buttons[i].button.url ? opt.buttons[i].button.url : '#' %>" class="a_btn d-block px-5" style="<%- opt.buttons[i].button.text_color ? 'color:' + opt.buttons[i].button.text_color + ';' : '' %><%- opt.buttons[i].button.background_color ? 'background-color:' + opt.buttons[i].button.background_color + ';' : '' %><%- opt.buttons[i].button.border_color ? 'border:1px solid ' + opt.buttons[i].button.border_color + ';' : '' %>">
+                  <%- opt.buttons[i].button.text %></strong>
+                </a>
               </div>
-              <% } %>
-            </div>
-          </div>
+            <% } %>
+            </ul>   
+          <% } %>
         </div>
-      </section>
-      <% } %>
+      </div>
+    </div>     
+  </section>
+  <% } %>

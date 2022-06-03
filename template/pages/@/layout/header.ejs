@@ -46,6 +46,7 @@ if (header.categories_list) {
 const hasMegamenu = header.desktop_megamenu
 %>
 
+<% if (1 != 1 ) {%>
 <div id="overlay" class="fade"></div>
 
 <div class="top-bar">
@@ -292,6 +293,86 @@ const hasMegamenu = header.desktop_megamenu
           </nav>
         </div>
       <% } %>
+    </div>
+  </div>
+</header>
+<% } %>
+<header id="a_header" class="px-4 py-4">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col">
+        <ul class="d-flex align-items-center a_menu text-white p-0 m-0">
+          <li>
+            <a href="" class="text-white text-upper a_p font-bold">Beauty Gummy</a>
+          </li>
+          <li>
+            <a href="" class="text-white text-upper a_p">Produtos</a>
+          </li>
+          <li>
+            <a href="" class="text-white text-upper a_p ">Fale Conosco</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col text-center">
+        <a href="/">
+          <%- await include('@/layout/inc/logo', { _ }) %>
+        </a>
+      </div>
+      <div class="col ">
+        <div
+          class="header__buttons justify-content-end d-flex"
+          role="group"
+          aria-label="<%= _.dictionary('myAccount') %>"
+        >
+          <a
+            id="user-button"
+            class="btn btn-lg text-left d-flex align-items-center justify-content-start"
+            role="button"
+            href="/app/#/account/"
+            title="<%= _.dictionary('myAccount') %>"
+          >
+            
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M38.3332 40.25V36.4167C38.3332 32.1825 34.9007 28.75 30.6665 28.75H15.3332C11.099 28.75 7.6665 32.1825 7.6665 36.4167V40.25M30.6665 13.4167C30.6665 17.6508 27.234 21.0833 22.9998 21.0833C18.7657 21.0833 15.3332 17.6508 15.3332 13.4167C15.3332 9.18248 18.7657 5.75 22.9998 5.75C27.234 5.75 30.6665 9.18248 30.6665 13.4167Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="text-left">
+              <b class="d-none d-md-block">Olá <span id="user-name">Visitante</span></b>
+              <span class="d-none d-md-inline user_message">Faça login ou cadastre-se</span>
+            </span>
+            
+          </a>
+          <a
+            id="cart-button"
+            class="btn btn-lg text-left d-flex  align-items-center justify-content-start"
+            role="button"
+            href="/app/#/cart"
+            title="<%= _.dictionary('openCart') %>"
+          >
+            
+            <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32.5835 32.5833C30.4664 32.5833 28.7502 34.2996 28.7502 36.4167C28.7502 38.5338 30.4664 40.25 32.5835 40.25C34.7006 40.25 36.4168 38.5338 36.4168 36.4167C36.4168 34.2996 34.7006 32.5833 32.5835 32.5833ZM32.5835 32.5833H14.1208C13.167 32.5833 12.3583 31.882 12.2234 30.9377L11.6371 26.8333M3.8335 5.75H8.62516L9.17278 9.58333M9.17278 9.58333H9.5835H40.2502L34.5002 26.8333H12.4585H11.6371M9.17278 9.58333L11.6371 26.8333M21.0835 36.4167C21.0835 38.5338 19.3673 40.25 17.2502 40.25C15.1331 40.25 13.4168 38.5338 13.4168 36.4167C13.4168 34.2996 15.1331 32.5833 17.2502 32.5833C19.3673 32.5833 21.0835 34.2996 21.0835 36.4167Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+  
+              <span class="text-left">
+                <b class="d-block"><span id="cart-count">0</span><span class="d-none d-md-inline">&nbsp; itens</span></b>
+                <span class="d-none d-md-inline">R$ 00,00</span>
+              </span>
+          </a>
+        </div>
+
+        <div id="login-modal">
+          <!--
+            `LoginModal` should be rendered here:
+            https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/LoginModal.html
+          -->
+        </div>
+        <div id="cart-quickview">
+          <!--
+            `CartQuickview` should be rendered here:
+            https://developers.e-com.plus/storefront/@ecomplus/storefront-components/docs/CartQuickview.html
+          -->
+        </div>
+      </div>
     </div>
   </div>
 </header>

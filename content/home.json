@@ -46,7 +46,7 @@
       "buttons": [
         {
           "button": {
-            "text": "Compre Agora",
+            "text": "Compre agora!",
             "background_color": "#f0839a",
             "text_color": "#ffffff",
             "url": "#secao-gummy",
@@ -113,10 +113,10 @@
       "title": "Outros Produtos",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
       "products": [
-        "628ec66fac0cb4200fe91939",
-        "628ec691ac0cb4200fe9195f",
-        "628ec6bbac0cb4200fe91991",
-        "628ec6deac0cb4200fe919b3"
+        "628ec6f2ac0cb4200fe919d2",
+        "628ec707ac0cb4200fe91a11",
+        "628ec720ac0cb4200fe91a33",
+        "628ec5e1ac0cb4200fe917e6"
       ]
     },
     {
