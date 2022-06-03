@@ -17,7 +17,7 @@ export default options => {
   options.sections = getSections(options).concat([
     {
       label: '[ALPIX] - Seção com Imagem',
-      name: 'apx_section',
+      name: 'alpix_chamadaImagem',
       widget: 'object',
       fields: [
         {
@@ -109,7 +109,7 @@ export default options => {
     },
     {
       label: '[ALPIX] - Depoimentos',
-      name: 'apx_testimonials',
+      name: 'alpix_sliderDepoimentos',
       widget: 'object',
       fields: [
         {
@@ -159,7 +159,7 @@ export default options => {
     },
     {
       label: '[ALPIX] - FAQ',
-      name: 'apx_faq',
+      name: 'alpix_listaFaq',
       widget: 'object',
       fields: [
         {
@@ -204,7 +204,7 @@ export default options => {
     },
     {
       label: '[ALPIX] - Lista de Produtos A',
-      name: 'apx_productList_A',
+      name: 'alpix_listaProdutoA',
       widget: 'object',
       fields: [
         {
@@ -251,7 +251,7 @@ export default options => {
     },
     {
       label: '[ALPIX] - Lista de Produtos B',
-      name: 'apx_productList_B',
+      name: 'alpix_listaProdutoB',
       widget: 'object',
       fields: [
         {
@@ -285,50 +285,50 @@ export default options => {
         
       ]
     },
-    {
-      label: '[ALPIX] - Compre Junto',
-      name: 'apx_buyTogether',
-      widget: 'object',
-      fields: [
-        {
-          label: 'Produtos',
-          name: 'products',
-          widget: 'list',
-          field: {
-            label: 'SKU do produto',
-            name: 'product_id',
-            widget: 'select',
-            options: options.state.routes
-              .filter(({ sku }) => typeof sku === 'string')
-              .map(({ _id, sku }) => ({
-                label: sku,
-                value: _id
-              }))
-          }
-        },
-        {
-          label: 'Título',
-          required: false,
-          name: 'title',
-          widget: 'string'
-        },
-        {
-          label: 'Sub Título',
-          required: false,
-          name: 'subtitle',
-          widget: 'string'
-        },
-        {
-          label: 'Descrição',
-          required: false,
-          name: 'description',
-          widget: 'text'
-        }
-      ]
-    },
+    // {
+    //   label: '[ALPIX] - Compre Junto',
+    //   name: 'alpix_compreJunto',
+    //   widget: 'object',
+    //   fields: [
+    //     {
+    //       label: 'Produtos',
+    //       name: 'products',
+    //       widget: 'list',
+    //       field: {
+    //         label: 'SKU do produto',
+    //         name: 'product_id',
+    //         widget: 'select',
+    //         options: options.state.routes
+    //           .filter(({ sku }) => typeof sku === 'string')
+    //           .map(({ _id, sku }) => ({
+    //             label: sku,
+    //             value: _id
+    //           }))
+    //       }
+    //     },
+    //     {
+    //       label: 'Título',
+    //       required: false,
+    //       name: 'title',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Sub Título',
+    //       required: false,
+    //       name: 'subtitle',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Descrição',
+    //       required: false,
+    //       name: 'description',
+    //       widget: 'text'
+    //     }
+    //   ]
+    // },
     {
       label: '[ALPIX] - Feed Instagram',
-      name: 'apx_instafeed',
+      name: 'alpix_feedInstagram',
       widget: 'object',
       fields: [
         {

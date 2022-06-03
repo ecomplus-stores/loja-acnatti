@@ -7,7 +7,7 @@
       "img": "/img/uploads/vector.png"
     },
     {
-      "type": "apx_testimonials",
+      "type": "alpix_sliderDepoimentos",
       "title": "Quem se ama, se cuida",
       "description": "A maneira favorita e mais gostosa de se cuidar é com os produtos Acnatti",
       "testimonials": [
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "type": "apx_productList_B",
+      "type": "alpix_listaProdutoB",
       "title": "Escolha seu <b>Kit Gummy</b>",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
       "products": [
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "type": "apx_productList_B",
+      "type": "alpix_listaProdutoB",
       "title": "Outros Produtos",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
       "products": [
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "type": "apx_faq",
+      "type": "alpix_listaFaq",
       "title": "Perguntas Frequentes",
       "questions": [
         {
