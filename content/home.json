@@ -7,6 +7,49 @@
       "img": "/img/uploads/vector.png"
     },
     {
+      "type": "alpix_chamadaImagem",
+      "image": "/img/uploads/acnatti_section.png",
+      "title": "Agora ficou mais gostoso cuidar da sua pele",
+      "description": "Unimos as melhores vitaminas e minerais pra te proporcionar uma mega experiência em cuidado facial. Cheias de vitaminas que cuidam da beleza da sua pele e também dos cabelos e unhas.",
+      "benefits": [
+        {
+          "list_option": {
+            "text": "Mastigável",
+            "image": "/img/uploads/star-1.svg"
+          }
+        },
+        {
+          "list_option": {
+            "text": "Produto Vegano",
+            "image": "/img/uploads/star-1.svg"
+          }
+        },
+        {
+          "list_option": {
+            "text": "Sem Glúten",
+            "image": "/img/uploads/star-1.svg"
+          }
+        },
+        {
+          "list_option": {
+            "text": "Formulado para Pele",
+            "image": "/img/uploads/star-1.svg"
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "button": {
+            "text": "Compre Agora",
+            "background_color": "#f0839a",
+            "text_color": "#ffffff",
+            "url": "#secao-gummy",
+            "border_color": "#f0839a"
+          }
+        }
+      ]
+    },
+    {
       "type": "alpix_sliderDepoimentos",
       "title": "Quem se ama, se cuida",
       "description": "A maneira favorita e mais gostosa de se cuidar é com os produtos Acnatti",
