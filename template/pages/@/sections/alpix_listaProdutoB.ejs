@@ -1,5 +1,5 @@
 <% 
-//console.log(opt)
+console.log(opt)
 if (Array.isArray(opt.products) && opt.products.length) {
     %>
 
@@ -16,7 +16,13 @@ if (Array.isArray(opt.products) && opt.products.length) {
             </div>
           </div>
           <div class="row">
-            <!--  -->
+            
+            <% for (let i = 0; i < opt.products.length; i++) { %>
+              <%- await include('@/sections/inc/alpix_product-item', {
+                _, opt: { item: opt.products[i] }
+              }) %>
+            <% } %>
+            
           </div>
         </div>
     </section>  
