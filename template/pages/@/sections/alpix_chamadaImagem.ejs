@@ -1,0 +1,43 @@
+<% if (opt.questions) { %>
+    <section id="chamada" class="chamadaImagem my-5 pb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-align:center">
+                    
+                </div>
+                <div class="col-12 col-md-6"></div>
+            </div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10 text-center">
+              <h2 class="a_title medel a_h2 text-center"><%- opt.title %></h2>
+              <!-- <small class="a_sub font-light">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+              </small> -->
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10" id="faq-list">
+                <% for (let i = 0; i < opt.questions.length; i++ ) { %>
+                <div class="item">
+                <div class="hat">
+                  <span class="a_text">
+                    <%- opt.questions[i].question.title %>
+                  </span>
+                  <button type="button">              
+                    <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.6665 1.66675L9.99984 10.0001L18.3332 1.66675" stroke="#D3D3D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>  
+                  </button>
+                </div>
+                <div class="content a_p">
+                    <%- opt.questions[i].question.response %>
+                </div>
+              </div>
+              <% } %>
+            </div>
+          </div>
+        </div>
+      </section>
+      <% } %>

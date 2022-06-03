@@ -10,7 +10,47 @@ import getWidgets from '@ecomplus/storefront-template/template/js/netlify-cms/ba
 //import getReceitas from './collections/receitas-posts'
 //import getGrids from './collections/grids'
 //import getMenuConfig from './collections/menu-config'
-
+// {
+    //   label: '[ALPIX] - Compre Junto',
+    //   name: 'alpix_compreJunto',
+    //   widget: 'object',
+    //   fields: [
+    //     {
+    //       label: 'Produtos',
+    //       name: 'products',
+    //       widget: 'list',
+    //       field: {
+    //         label: 'SKU do produto',
+    //         name: 'product_id',
+    //         widget: 'select',
+    //         options: options.state.routes
+    //           .filter(({ sku }) => typeof sku === 'string')
+    //           .map(({ _id, sku }) => ({
+    //             label: sku,
+    //             value: _id
+    //           }))
+    //       }
+    //     },
+    //     {
+    //       label: 'Título',
+    //       required: false,
+    //       name: 'title',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Sub Título',
+    //       required: false,
+    //       name: 'subtitle',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Descrição',
+    //       required: false,
+    //       name: 'description',
+    //       widget: 'text'
+    //     }
+    //   ]
+    // },
 export default options => {
   //console.log('custom cms config')
   
@@ -285,47 +325,7 @@ export default options => {
         
       ]
     },
-    // {
-    //   label: '[ALPIX] - Compre Junto',
-    //   name: 'alpix_compreJunto',
-    //   widget: 'object',
-    //   fields: [
-    //     {
-    //       label: 'Produtos',
-    //       name: 'products',
-    //       widget: 'list',
-    //       field: {
-    //         label: 'SKU do produto',
-    //         name: 'product_id',
-    //         widget: 'select',
-    //         options: options.state.routes
-    //           .filter(({ sku }) => typeof sku === 'string')
-    //           .map(({ _id, sku }) => ({
-    //             label: sku,
-    //             value: _id
-    //           }))
-    //       }
-    //     },
-    //     {
-    //       label: 'Título',
-    //       required: false,
-    //       name: 'title',
-    //       widget: 'string'
-    //     },
-    //     {
-    //       label: 'Sub Título',
-    //       required: false,
-    //       name: 'subtitle',
-    //       widget: 'string'
-    //     },
-    //     {
-    //       label: 'Descrição',
-    //       required: false,
-    //       name: 'description',
-    //       widget: 'text'
-    //     }
-    //   ]
-    // },
+    
     {
       label: '[ALPIX] - Feed Instagram',
       name: 'alpix_feedInstagram',
