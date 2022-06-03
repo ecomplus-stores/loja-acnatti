@@ -1,7 +1,13 @@
 <% 
-console.log(opt)
+//console.log(opt)
 if (Array.isArray(opt.products) && opt.products.length) {
-    %>
+const search = new _.EcomSearch()
+await search.setProductIds(opt.products).fetch(true)
+const items = search.getItems()
+//console.log(items)
+
+
+%>
 
     <section id="<%- opt.section_id ? opt.section_id : '' %>" class="listaProdutoB py-5">
         <div class="container py-5">
@@ -15,13 +21,89 @@ if (Array.isArray(opt.products) && opt.products.length) {
               </small>
             </div>
           </div>
+          <div
+            class="glide"
+            data-per-view="4"
+            data-per-view-md="4"
+            data-per-view-sm="1"
+          >
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <% for (let i = 0; i < items.length; i++) { %>
+                  <%
+                    const itemData = items[i]
+                    console.log(itemData)
+                    //console.log(itemData.pictures)
+                    const imgObj = Array.isArray(itemData.pictures) ? itemData.pictures[0].normal : false
+                    //console.log(imgObj)
+                  %>
+    
+                  <li class="glide__slide products-carousel__item">
+                      <div class="alpix_product-card  text-center stock-<%- itemData.inStock  %>" data-product="<%= JSON.stringify(itemData) %>">
+                        <div class="p-picture">
+                          <picture>
+                            <img
+                              src="<%= imgObj.url %>"
+                              alt="<%= imgObj.alt %>"
+                              
+                            >
+                          </picture>                      
+                        </div>
+                        <div class="mt-3 p-name"><%- itemData.name %></div>
+                        <div class="mt-3 p-short_description"><%- itemData.short_description %></div>
+                        <div class="mt-5 p-base_price d-flex align-items-center justify-content-center"><s><%- _.ecomUtils.formatMoney(itemData.base_price) %></s><label><%- (((itemData.base_price / itemData.price) * 100) -100).toFixed(0) %>% OFF</label></div>
+                        <div class="mt-1 p-price d-flex align-items-center"><small><%- itemData.currency_symbol %></small><%- _.ecomUtils.formatMoney(itemData.base_price).replace('R$','') %></div>
+                        <div class="p-installments"></div>
+                        <div class="mt-3 p-buy">
+                          <button type="button" onclick="ecomCart.addProduct(<%= JSON.stringify(itemData) %>)">Comprar</button>
+                        </div>
+                        <% if (itemData.keywords) {%>
+                        <div class="mt-4 pt-4 p-list">
+                          <% for (let x = 0; x < itemData.keywords.length; x++) { %>
+                          <div class="item d-flex align-items-center">                            
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.2803 7.28033C13.5732 6.98744 13.5732 6.51256 13.2803 6.21967C12.9874 5.92678 12.5126 5.92678 12.2197 6.21967L13.2803 7.28033ZM7.49999 12L6.96966 12.5303C7.26255 12.8232 7.73742 12.8232 8.03032 12.5303L7.49999 12ZM5.78028 9.21967C5.48739 8.92678 5.01251 8.92678 4.71962 9.21967C4.42673 9.51257 4.42673 9.98744 4.71963 10.2803L5.78028 9.21967ZM12.2197 6.21967L6.96966 11.4697L8.03032 12.5303L13.2803 7.28033L12.2197 6.21967ZM4.71963 10.2803L6.96966 12.5303L8.03031 11.4697L5.78028 9.21967L4.71963 10.2803ZM15 9C15 12.3137 12.3137 15 9 15V16.5C13.1421 16.5 16.5 13.1421 16.5 9H15ZM9 15C5.68629 15 3 12.3137 3 9H1.5C1.5 13.1421 4.85786 16.5 9 16.5V15ZM3 9C3 5.68629 5.68629 3 9 3V1.5C4.85786 1.5 1.5 4.85786 1.5 9H3ZM9 3C12.3137 3 15 5.68629 15 9H16.5C16.5 4.85786 13.1421 1.5 9 1.5V3Z" fill="#F0839A"/>
+                            </svg>
+                            <span>
+                              <%- itemData.keywords[x] %>
+                            </span>
+  
+                          </div>  
+                          <% } %>
+                        </div>
+                        <% }%>
+                        
+                      </div>
+                  </li>
+                  
+                <% } %>
+                
+              </ul>
+
+              <!-- <div
+                class="glide__arrows glide__arrows--outer"
+                data-glide-el="controls"
+              >
+                <button
+                  class="btn glide__arrow glide__arrow--left"
+                  data-glide-dir="<"
+                  aria-label="<%= _.dictionary('previous') %>"
+                >
+                  <i class="i-chevron-left"></i>
+                </button>
+                <button
+                  class="btn glide__arrow glide__arrow--right"
+                  data-glide-dir=">"
+                  aria-label="<%= _.dictionary('next') %>"
+                >
+                  <i class="i-chevron-right"></i>
+                </button>
+              </div> -->
+            </div>
+          </div>
           <div class="row">
             
-            <% for (let i = 0; i < opt.products.length; i++) { %>
-              <%- await include('@/sections/inc/alpix_product-item', {
-                _, opt: { item: opt.products[i] }
-              }) %>
-            <% } %>
+            
             
           </div>
         </div>

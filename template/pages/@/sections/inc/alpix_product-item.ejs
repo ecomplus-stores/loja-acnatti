@@ -1,21 +1,8 @@
 <%
 console.log(opt)
-const itemData = {}
-let itemDataFields = ['_id', 'sku', 'slug', 'quantity']
-if (Array.isArray(_.itemDataFields)) {
-  itemDataFields = itemDataFields.concat(_.itemDataFields)
-}
-itemDataFields.forEach(field => itemData[field] = opt.item[field])
-itemData.name = _.ecomUtils.name(opt.item)
-itemData.price = _.ecomUtils.price(opt.item)
-
-const imgObj = _.ecomUtils.img(opt.item)
-if (imgObj) {
-  itemData.pictures = [{
-    _id: _.ecomUtils.randomObjectId(),
-    normal: imgObj
-  }]
-}
+const itemData = opt.item
+console.log(itemData.pictures)
+const imgObj = Array.isArray(itemData.pictures) ? itemData.pictures[0].normal : false
 %>
 
 <article class="product-item" data-product="<%= JSON.stringify(itemData) %>">

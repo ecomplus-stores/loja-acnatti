@@ -49,7 +49,7 @@
             "text": "Compre agora!",
             "background_color": "#f0839a",
             "text_color": "#ffffff",
-            "url": "#secao-gummy",
+            "url": "#kit-gummy",
             "border_color": "#f0839a"
           }
         }
@@ -99,24 +99,26 @@
     },
     {
       "type": "alpix_listaProdutoB",
+      "section_id" : "kit-gummy",
       "title": "Escolha seu <b>Kit Gummy</b>",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
-      "products": [
+      "products": [        
+        "628ec707ac0cb4200fe91a11",
+        "628ec6f2ac0cb4200fe919d2",        
         "628ec5e1ac0cb4200fe917e6",
-        "628ec606ac0cb4200fe9185c",
-        "628ec622ac0cb4200fe918b2",
-        "628ec63bac0cb4200fe918ee"
+        "628ec720ac0cb4200fe91a33"
       ]
     },
     {
       "type": "alpix_listaProdutoB",
       "title": "Outros Produtos",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
+      
       "products": [
-        "628ec6f2ac0cb4200fe919d2",
-        "628ec707ac0cb4200fe91a11",
-        "628ec720ac0cb4200fe91a33",
-        "628ec5e1ac0cb4200fe917e6"
+        "628ec5e1ac0cb4200fe917e6",
+        "628ec606ac0cb4200fe9185c",
+        "628ec622ac0cb4200fe918b2",
+        "628ec63bac0cb4200fe918ee"
       ]
     },
     {

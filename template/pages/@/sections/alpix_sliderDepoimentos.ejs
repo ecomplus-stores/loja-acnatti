@@ -18,12 +18,10 @@ if(opt.testimonials){
         <div class="col-12">
           <div id="testimonials-slider"
             class="glide"
-            data-wait-mutation="false"
-            data-autoplay="true"
+            data-autoplay="2000"
             data-per-view="3"
             data-per-view-md="3"
             data-per-view-sm="1"
-            data-type="carousel"
           >
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides products-carousel__list">
@@ -40,12 +38,12 @@ if(opt.testimonials){
             <% } %>              
             </ul>
             <div class="glide__bullets mt-5" data-glide-el="controls[nav]">        
-                <!-- <% for (let i = 0; i < Math.ceil(opt.testimonials.length/3); i++ ) { %>
+                <% for (let i = 0; i < Math.ceil(opt.testimonials.length/3); i++ ) { %>
                     <button class="glide__bullet" data-glide-dir="=<%= i %>"></button>
-                <% } %>   -->
-                <% for (let i = 0; i < opt.testimonials.length; i++ ) { %>
+                <% } %>  
+                <!-- <% for (let i = 0; i < opt.testimonials.length; i++ ) { %>
                   <button class="glide__bullet" data-glide-dir="=<%= i %>"></button>
-              <% } %>  
+              <% } %>   -->
             </div>
   
             <div
