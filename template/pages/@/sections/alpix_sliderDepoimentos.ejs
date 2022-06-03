@@ -9,7 +9,7 @@ if(opt.testimonials){
           <h3 class="a_title medel a_h3">
             <%- opt.title %>
           </h3>
-          <small class="a_sub font-light">
+          <small class="a_sub font-light  d-block">
             <%- opt.description %>
           </small>
         </div>
@@ -40,9 +40,12 @@ if(opt.testimonials){
             <% } %>              
             </ul>
             <div class="glide__bullets mt-5" data-glide-el="controls[nav]">        
-                <% for (let i = 0; i < Math.round(opt.testimonials.length/3); i++ ) { %>
+                <!-- <% for (let i = 0; i < Math.ceil(opt.testimonials.length/3); i++ ) { %>
                     <button class="glide__bullet" data-glide-dir="=<%= i %>"></button>
-                <% } %>  
+                <% } %>   -->
+                <% for (let i = 0; i < opt.testimonials.length; i++ ) { %>
+                  <button class="glide__bullet" data-glide-dir="=<%= i %>"></button>
+              <% } %>  
             </div>
   
             <div

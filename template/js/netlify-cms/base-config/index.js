@@ -61,6 +61,12 @@ export default options => {
       widget: 'object',
       fields: [
         {
+          label: 'ID da Seção',
+          required: false,
+          name: 'section_id',
+          widget: 'string'
+        },
+        {
           label: 'Título',
           required: false,
           name: 'title',
@@ -153,6 +159,12 @@ export default options => {
       widget: 'object',
       fields: [
         {
+          label: 'ID da Seção',
+          required: false,
+          name: 'section_id',
+          widget: 'string'
+        },
+        {
           label: 'Título',
           required: false,
           name: 'title',
@@ -203,6 +215,12 @@ export default options => {
       widget: 'object',
       fields: [
         {
+          label: 'ID da Seção',
+          required: false,
+          name: 'section_id',
+          widget: 'string'
+        },
+        {
           label: 'Título',
           required: false,
           name: 'title',
@@ -247,6 +265,12 @@ export default options => {
       name: 'alpix_listaProdutoA',
       widget: 'object',
       fields: [
+        {
+          label: 'ID da Seção',
+          required: false,
+          name: 'section_id',
+          widget: 'string'
+        },
         {
           label: 'Produtos',
           name: 'products',
@@ -295,6 +319,12 @@ export default options => {
       widget: 'object',
       fields: [
         {
+          label: 'ID da Seção',
+          required: false,
+          name: 'section_id',
+          widget: 'string'
+        },
+        {
           label: 'Produtos',
           name: 'products',
           widget: 'list',
@@ -331,6 +361,12 @@ export default options => {
       name: 'alpix_feedInstagram',
       widget: 'object',
       fields: [
+        {
+          label: 'ID da Seção',
+          required: false,
+          name: 'section_id',
+          widget: 'string'
+        },
         {
           label: 'Título',
           required: false,
