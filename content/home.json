@@ -35,6 +35,12 @@
             "text": "Formulado para Pele",
             "image": "/img/uploads/star-1.svg"
           }
+        },
+        {
+          "list_option": {
+            "image": "/img/uploads/star-1.svg",
+            "text": "10 Vitaminas e Minerais"
+          }
         }
       ],
       "buttons": [
