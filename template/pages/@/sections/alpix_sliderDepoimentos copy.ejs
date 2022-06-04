@@ -1,0 +1,80 @@
+<% 
+
+if(opt.testimonials){
+%>
+<section id="testimonials" class="my-5 pb-md-5 pb-3">
+    <div class="container">
+      <div class="row mb-md-5 mb-4 pb-md-4 pb-3">
+        <div class="col-12 col-md-6">
+          <h3 class="a_title medel a_h3">
+            <%- opt.title %>
+          </h3>
+          <small class="a_sub font-light  d-block">
+            <%- opt.description %>
+          </small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div id="testimonials-slider"
+            class="glide"
+            data-autoplay="2000"
+            data-per-view="3"
+            data-per-view-md="3"
+            data-per-view-sm="1"
+          >
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides products-carousel__list">
+            <% for (let i = 0; i < opt.testimonials.length; i++ ) { %>
+              <li class="glide__slide item">
+                <div class="img">
+                  <img src="<%- opt.testimonials[i].testimonial.image %>" alt="">
+                </div>
+                <strong class="text-primary text-center d-block my-4 pt-2 a_text"><%- opt.testimonials[i].testimonial.name %></strong>
+                <p class="a_p">
+                    <%- opt.testimonials[i].testimonial.text %>
+                </p>
+              </li>
+            <% } %>              
+            </ul>
+            <div class="glide__bullets mt-5" data-glide-el="controls[nav]">        
+                <% for (let i = 0; i < Math.ceil(opt.testimonials.length/3); i++ ) { %>
+                    <button class="glide__bullet" data-glide-dir="=<%= i %>"></button>
+                <% } %>  
+                <!-- <% for (let i = 0; i < opt.testimonials.length; i++ ) { %>
+                  <button class="glide__bullet" data-glide-dir="=<%= i %>"></button>
+              <% } %>   -->
+            </div>
+  
+            <div
+            class="glide__arrows glide__arrows--outer"
+            data-glide-el="controls"
+          >
+            <button
+              class="btn glide__arrow glide__arrow--left  a_arrow circle bg-primary"
+              data-glide-dir="<"
+              aria-label="<%= _.dictionary('previous') %>"
+            >
+              
+              <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 1L1 9L9 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+    
+            </button>
+            <button
+              class="btn glide__arrow glide__arrow--right a_arrow circle bg-primary"
+              data-glide-dir=">"
+              aria-label="<%= _.dictionary('next') %>"
+            >
+              
+              <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 1L1 9L9 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>  
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <% } %>

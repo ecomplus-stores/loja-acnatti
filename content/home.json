@@ -103,14 +103,15 @@
       "title": "Escolha seu <b>Kit Gummy</b>",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
       "products": [        
-        "628ec707ac0cb4200fe91a11",
-        "628ec6f2ac0cb4200fe919d2",        
-        "628ec5e1ac0cb4200fe917e6",
-        "628ec720ac0cb4200fe91a33"
+        "628ec6f2ac0cb4200fe919d2",
+        "628ec707ac0cb4200fe91a11",                
+        "628ec720ac0cb4200fe91a33",
+        "628ec5e1ac0cb4200fe917e6"
       ]
     },
     {
       "type": "alpix_listaProdutoB",
+      "section_id" : "outros-produtos",
       "title": "Outros Produtos",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
       

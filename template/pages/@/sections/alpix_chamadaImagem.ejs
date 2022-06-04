@@ -1,9 +1,9 @@
 <% 
 if(opt.image && opt.title && opt.description){
 %>
-<section id="" class="chamadaImagem my-5 pt-5 pb-5">
+<section id="" class="chamadaImagem my-md-5 my-3 py-md-5 py-3">
     <div class="container">
-      <div class="row mb-5 pb-4">
+      <div class="row mb-md-5 pb-md-4 pb-2 mb-2">
         <div class="col-12 col-md-5 bigImage">
           <img src="<%- opt.image %>" alt="">
         </div>
@@ -11,11 +11,11 @@ if(opt.image && opt.title && opt.description){
           <h3 class="a_title medel a_h3">
             <%- opt.title %>
           </h3>
-          <small class="a_sub font-light d-block mt-4">
+          <small class="a_sub font-light d-block mt-md-4 mt-3">
             <%- opt.description %>
           </small>
           <% if (opt.benefits.length) {%>
-            <ul class="mt-5 mb-0 px-0">
+            <ul class="mt-md-5 mt-3 mb-0 px-0">
             <% for (let i = 0; i < opt.benefits.length; i++ ) { %>
               <li class="item my-2 d-flex align-items-center d-block">
                 <div class="img mr-3">
@@ -27,7 +27,7 @@ if(opt.image && opt.title && opt.description){
             </ul>   
           <% } %>
           <% if (opt.buttons.length) {%>
-            <div class="d-flex align-items-center buttons mt-5">
+            <div class="d-flex align-items-center buttons mt-md-5 mt-4">
             <% for (let i = 0; i < opt.buttons.length; i++ ) { %>
               <div class="mr-2">
                 <a href="<%- opt.buttons[i].button.url ? opt.buttons[i].button.url : '#' %>" class="a_btn d-block px-5" style="<%- opt.buttons[i].button.text_color ? 'color:' + opt.buttons[i].button.text_color + ';' : '' %><%- opt.buttons[i].button.background_color ? 'background-color:' + opt.buttons[i].button.background_color + ';' : '' %><%- opt.buttons[i].button.border_color ? 'border:1px solid ' + opt.buttons[i].button.border_color + ';' : '' %>">

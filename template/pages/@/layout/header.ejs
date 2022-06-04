@@ -49,20 +49,26 @@ const hasMegamenu = header.desktop_megamenu
 <header id="header" class="header px-4 py-4">
   <div class="container-fluid">
     <div class="row align-items-center">
-      <div class="col">
+      <div class="col-auto col-sm">
+        <div class="d-block d-sm-none menu_trigger">
+          <button type="button" onclick="$('.a_menu').toggleClass('visible')"></button>
+        </div>        
         <ul class="d-flex align-items-center a_menu text-white p-0 m-0">
-          <li>
-            <a href="" class="text-white text-upper a_p font-bold">Beauty Gummy</a>
+          <li class="close d-block d-sm-none">
+            <button type="button" onclick="$('.a_menu').toggleClass('visible')"></button>
           </li>
           <li>
-            <a href="" class="text-white text-upper a_p">Produtos</a>
+            <a href="http://localhost:9100/search?term=Beauty+Gummy" class="text-white text-upper a_p font-bold">Beauty Gummy</a>
           </li>
           <li>
-            <a href="" class="text-white text-upper a_p ">Fale Conosco</a>
+            <a href="/search" class="text-white text-upper a_p">Produtos</a>
+          </li>
+          <li>
+            <a href="/pages/contato" class="text-white text-upper a_p ">Fale Conosco</a>
           </li>
         </ul>
       </div>
-      <div class="col text-center">
+      <div class="col-auto text-center">
         <a href="/">
           <%- await include('@/layout/inc/logo', { _ }) %>
         </a>
@@ -104,7 +110,7 @@ const hasMegamenu = header.desktop_megamenu
   
               <span class="text-left">
                 <b class="d-block"><span id="cart-count">0</span><span class="d-none d-md-inline">&nbsp; itens</span></b>
-                <span class="d-none d-md-inline">R$ 00,00</span>
+                <span class="d-none d-md-inline" id="cart-subtotal">R$ 00,00</span>
               </span>
           </a>
         </div>

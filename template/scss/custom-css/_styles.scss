@@ -1,4 +1,6 @@
-// Add your custom CSS here.
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+
 // Add your custom CSS here.
 @font-face {
     font-family: 'NuberNext';
@@ -45,7 +47,7 @@
 .footer{background:#fff}
 
 :root{
-    --primary: #5B5B5B;
+    --primary: #F0839A;
     --text: #5B5B5B;
     --c-secondary: #FDCB6E;
     --c-primary: #F0839A;
@@ -92,9 +94,7 @@
 body,
 a,
 p,
-div,
-span,
-i{
+div{
     font-family: 'NuberNext', sans-serif;
     color:var(--text);
     font-weight:300;
@@ -114,7 +114,8 @@ i{
     justify-content: space-between;
     align-items: center;
     padding:1.5rem;
-    border-bottom:1px solid var(--lightGray)
+    border-bottom:1px solid var(--lightGray);
+    gap:30px;
 }
 #faq #faq-list .item .hat > span{}
 #faq #faq-list .item .hat > button{
@@ -135,12 +136,13 @@ i{
 }
 
 #testimonials .item{
-    max-width:400px;
+    // max-width:400px;
     justify-content:center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    padding:0 15px;
 }
 #testimonials .item .img img{
     object-fit: cover;
@@ -156,36 +158,58 @@ i{
     width: -moz-fit-content;
     width: fit-content;
     max-height: 300px;
-    max-width: calc(100% - 30px);
+    // max-width: calc(100% - 30px);
 }
 
 #testimonials .glide__track,
 #testimonials .glide__track .glide__slides{overflow:visible}
 
 .a_arrow{
-    opacity:1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height:48px;
-    width:48px;
-    padding:0
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    height: 48px;
+    opacity: 1;
+    padding: 0;
+    width: 48px;
+    background: var(--c-primary);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 48px;
+    z-index:5;
+    cursor:pointer;
 }
-.a_arrow.glide__arrow--right svg{
-    transform:rotate(-180deg)
+.a_arrow.arrow--right{
+    right:0;
+    left:auto;
+}
+.a_arrow.arrow--right svg{
+    transform:rotate(-180deg);
+    
 }
 #testimonials-slider .glide__bullets{
     bottom:auto;
     position:relative;
     gap:5px;
 }
-#testimonials-slider .glide__bullets .glide__bullet{
+#testimonials-slider .slick-dots{bottom:-4rem;}
+#testimonials-slider .slick-dots li button:before{display:none;}
+#testimonials-slider .slick-dots li button{
     border:0;
     height: 4px;
     background:#f2f2f2;
     width:75px;
+    border-radius:10px;
+    padding:0;
 }
-#testimonials-slider .glide__bullets .glide__bullet:hover,
-#testimonials-slider .glide__bullets .glide__bullet.glide__bullet--active{
-    background-color:var(--c-primary)
+#testimonials-slider .slick-dots li{
+    width:auto;
+    height:auto;
+}
+#testimonials-slider .slick-dots li button:hover,
+#testimonials-slider .slick-dots li.slick-active button{
+    background-color:var(--c-primary);
 }
 
 .listaProdutoB{
@@ -220,7 +244,17 @@ i{
 }
 #header .a_menu li{}
 
-#content > .sections > .responsive-baner:first-child{margin-top:0}
+#content > .sections > .responsive-baner:first-child{
+    margin-top:0;
+    border-bottom-left-radius: 20vw 5vw;
+    border-bottom-right-radius: 20vw 5vw;
+    overflow:hidden;
+}
+#outros-produtos{
+    border-bottom-left-radius: 20vw 5vw;
+    border-bottom-right-radius: 20vw 5vw;
+}
+
 
 #user-button,
 #cart-button{gap:.5rem}
@@ -245,7 +279,7 @@ i{
 .alpix_product-card .p-picture{}
 .alpix_product-card .p-picture picture{max-width:80%;margin:0 auto;display:block;margin-top:-10rem}
 .alpix_product-card .p-picture picture img{max-width:100%}
-.alpix_product-card .p-name{
+.alpix_product-card .p-name a{
     color:#000;
     font-size:var(--a_p);
     font-weight:600;
@@ -315,3 +349,165 @@ i{
 .header{box-shadow:unset;border:0}
 
 #kit-gummy .a_title b{color:var(--c-primary)}
+
+.a_menu .close{
+    opacity:1!important;
+}
+.a_menu .close button{
+    background: transparent;
+    border: 0;
+    padding: 0;
+    width: 46px;
+    height: 46px;
+    position:relative;
+}
+.a_menu .close button:before,
+.a_menu .close button:after{
+    background: #fff;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: -1%;
+    position:absolute;
+}
+.a_menu .close button:before{
+    transform: rotate(-45deg);
+}
+.a_menu .close button:after{
+    transform: rotate(45deg);
+}
+.menu_trigger{}
+.menu_trigger button{
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+    height: 27px;
+    padding: 0;
+    position: relative;
+    width: 32px;
+}
+.menu_trigger button:after{
+    content:'';
+    height:2px;
+    background:#fff;
+    width:100%;
+    position:absolute;
+    top: 50%;
+    left:0
+}
+
+
+@media(max-width:990px){
+    :root{
+        --primary: #5B5B5B;
+        --text: #5B5B5B;
+        --c-secondary: #FDCB6E;
+        --c-primary: #F0839A;
+        --lightGray: #f8f8f8;
+    
+        --a_h1:calc(76.29px * 0.7);
+        --a_h2:calc(61.04px * 0.7);
+        --a_h3:calc(48.03px * 0.7);
+        --a_h4:calc(39.06px * 0.7);
+        --a_h5:calc(31.25px * 0.7);
+        --a_sub:calc(25px * 0.7);
+        --a_text:calc(20px * 0.8);
+        --a_btn:calc(20px * 0.9);
+        --a_p:calc(16px * 0.9);
+    }
+
+    .a_menu{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: var(--c-primary);
+        width: 100vw;
+        padding: 10rem 0;
+        z-index:10;
+        opacity:0;
+        pointer-events:none;
+    }
+    .a_menu a{font-size:20px}
+    .a_menu.visible{opacity: 1;pointer-events:all;}
+
+    .header__buttons svg{
+        height:36px;
+        width:36px;
+    }
+    #cart-button{margin-left:10px!important}
+    #cart-button, #user-button{gap:0;margin:0;padding:0}
+    #cart-count{
+        position: absolute;
+        background: #fff;
+        color: var(--c-primary)!important;
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        border-radius: 50%;
+        right: -6px;
+        font-size: 10px;
+        line-height: 21px;
+        top: 0;
+    }
+    #header{padding:1rem .5rem}
+
+    .chamadaImagem .bigImage img{
+        position:relative;
+        top:unset;
+        right:unset;
+        transform:unset;
+        max-width:100%;
+    }
+    .alpix_product-card{margin-top:6rem}
+    .alpix_product-card .p-picture picture{margin-top:-6rem}
+    .alpix_product-card .p-price{font-size:34px}
+    .alpix_product-card .p-price small{font-size:16px}
+    .alpix_product-card .p-buy button{line-height:46px;}
+    #kit-gummy .a_title b{display:block;}
+    #testimonials-slider .slick-dots li button{width:40px;}
+
+    #testimonials .item .img img{
+        height: 200px;
+        width: 100%;
+    }
+    #faq #faq-list .item.visible .content,
+    #faq #faq-list .item .hat{padding:.5rem}
+    .footer__links{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.slick-list{overflow:visible}
+
+.app__header{
+    background:var(--c-primary)
+}
+.app__safe,
+.app__contact,
+.app__contact span{color:#fff}
+.app__contact span:not(:first-child){color:#fff;font-weight:600}
+.app__footer{
+    border:0;
+    background:#fff
+}
+.app__stamps>.stamps{justify-content:center;}
+
+.prices--big .prices__value{
+    color:var(--c-primary);
+    font-weight:600;
+}
+.product__buy .i-shopping-bag{display:none}
+.product__buy button{
+    padding:0 3rem;
+}
+.product__buy  button > span{
+    line-height:50px;
+    font-size:var(--a_btn);
+    font-weight:600;
+}
