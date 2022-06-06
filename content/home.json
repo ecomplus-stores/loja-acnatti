@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "responsive-banner",
-      "img": "/img/uploads/vector.png"
+      "img": "/img/uploads/mesdosnamorados.png"
     },
     {
       "type": "alpix_chamadaImagem",
@@ -128,20 +128,32 @@
       "questions": [
         {
           "question": {
-            "response": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
-            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+            "title": "O que é <strong>Acnatt Beauty Gummy</strong>?",
+            "response": "Acnatti Beauty Gummy  é uma gominha deliciosa de pectina vegetal desenvolvida  com 10 vitaminas e minerais perfeitas para pele, A, C, E, B3, B6, B5, Biotina, Iodo, Selênio e Zinco, que auxilia no combate a cravos, espinhas e manchas, agindo de dentro para fora, além de estimular a produção de colágeno e ajuda a inibir os radicais livres responsáveis pelo envelhecimento, por conter vitaminas voltadas para a renovação celular. Veja todos os detalhes <a href='/acnatti-beauty-gummy---durao-30-dias'>clicando aqui</a>"
           }
         },
         {
           "question": {
-            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-            "response": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+            "title": "Do que é feito o <strong>Acnatt Beauty Gummy</strong>?",
+            "response": "É uma gominha deliciosa de pectina vegetal desenvolvida  com 10 vitaminas e minerais perfeitas para pele, A, C, E, B3, B6, B5, Biotina, Iodo, Selênio e Zinco. Veja todos os detalhes <a href='/acnatti-beauty-gummy---durao-30-dias'>clicando aqui</a>"
           }
         },
         {
           "question": {
-            "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-            "response": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+            "title": "Quantas gomas posso ingerir?",
+            "response": "Tão saborosa e macia que dar vontade de comer todas de uma só vez, mas fique atento, são apenas duas ao dia."
+          }
+        },
+        {
+          "question": {
+            "title": "Em quanto tempo já posso ver os resultados",
+            "response": "Os resultados podem variar de acordo com o estilo de vida, alimentação e metabolismo de cada indivíduo."
+          }
+        },
+        {
+          "question": {
+            "title": "Quem pode tomar o <strong>Acnatt Beauty Gummy</strong>?",
+            "response": "Recomendado para maiores de 19 anos. Gestantes e lactantes podem consumir sob orientação do médico ou nutricionista."
           }
         }
       ]
