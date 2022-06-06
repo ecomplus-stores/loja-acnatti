@@ -4,7 +4,8 @@
   "sections": [
     {
       "type": "responsive-banner",
-      "img": "/img/uploads/5.png"
+      "img": "/img/uploads/5.png",
+      "link": "#kit-gummy"
     },
     {
       "type": "alpix_chamadaImagem",
