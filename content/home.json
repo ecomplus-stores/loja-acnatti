@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "responsive-banner",
-      "img": "/img/uploads/mesdosnamorados.png"
+      "img": "/img/uploads/5.png"
     },
     {
       "type": "alpix_chamadaImagem",
@@ -99,22 +99,21 @@
     },
     {
       "type": "alpix_listaProdutoB",
-      "section_id" : "kit-gummy",
+      "section_id": "kit-gummy",
       "title": "Escolha seu <b>Kit Gummy</b>",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
-      "products": [        
+      "products": [
         "628ec6f2ac0cb4200fe919d2",
-        "628ec707ac0cb4200fe91a11",                
+        "628ec707ac0cb4200fe91a11",
         "628ec720ac0cb4200fe91a33",
         "628ec5e1ac0cb4200fe917e6"
       ]
     },
     {
       "type": "alpix_listaProdutoB",
-      "section_id" : "outros-produtos",
+      "section_id": "outros-produtos",
       "title": "Outros Produtos",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
-      
       "products": [
         "628ec5e1ac0cb4200fe917e6",
         "628ec606ac0cb4200fe9185c",
