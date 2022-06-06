@@ -1,0 +1,37 @@
+{
+  "icons": [
+    {
+      "src": "/icon_512x512.67514127b90658641cad4f7959fefa4d.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.9ba742a0e79b703eef471b36ea5c91f0.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.31a92eed580c54b6a3d34227ccf073f1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.9b8166be4b759394b4ca5225f8e3fb64.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.ef25b6e1e26977e497216e301c35beae.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "loja-acnatti",
+  "short_name": "Acnatti",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Unimos as melhores vitaminas e minerais pra te proporcionar uma mega experiência em cuidado facial. Cheias de vitaminas que cuidam da beleza da sua pele e também dos cabelos e unhas.",
+  "background_color": "#ffffff",
+  "theme_color": "#8b8b8b"
+}
