@@ -521,4 +521,31 @@ div{
 #faq #faq-list .item .content a{text-decoration:underline;font-style: italic;}
 
 /* FLOATING WHATSAPP */ 
+@media(min-width: 767px) {
+    .theme_worker-floatingWhatsapp{bottom: 25% !important; }
+}
 .theme_worker-floatingWhatsapp{position: fixed; bottom: 60px; right: 30px; z-index: 999;}.theme_worker-floatingWhatsapp > a > span{box-shadow: 0px 0px 10px rgb(0 0 0 / 10%); top: 50%; position: absolute; right: calc(100% + 15px); padding: 10px; font-size: 12px; width: 150px; text-align: center; border-radius: 5px; transform: translate(0,-50%);}.theme_worker-floatingWhatsapp > a > span:after{content: ""; border-left: 10px solid #f8f8f8; border-top: 7px solid transparent; border-bottom: 7px solid transparent; left: 100%; position: absolute; top: calc(50% - 7px);}@media(max-width:990px){.theme_worker-floatingWhatsapp > a >span{display:none;}}
+
+.cart__info {
+    background: #f1f1f1!important;
+    .list-group-item.active {
+        background-color: #858585 !important;
+        border-color: #858585 !important;
+        color: #fff !important;
+        .shipping-line * {
+            color: #fff !important
+        }
+    }
+    .prices__value {
+        color: #F0839A !important;
+    }
+
+}
+.discount-applier.cart__discount {
+    background: #f3f3f3;
+    padding: 1rem;
+    button {
+        border-color: #F0839A !important;
+        color: #F0839A !important;
+    }
+}

@@ -78,3 +78,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+if (storefront && storefront.context && storefront.context.resource === 'products') {
+  ecomCart.on('addItem', () => { 
+      window.location = '/app/#/cart/' 
+  })
+}
