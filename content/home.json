@@ -1,6 +1,6 @@
 {
-  "meta_title": "",
-  "meta_description": "",
+  "meta_title": "Tratamento para Pele, Cabelos e Unhas - Acnatti",
+  "meta_description": "Procurando tratamento para pele, cabelo e unhas? Unimos as melhores vitaminas e minerais pra te proporcionar uma mega experiência em cuidado facial. Cheias de vitaminas que cuidam da beleza da sua pele e também dos cabelos e unhas.",
   "sections": [
     {
       "type": "responsive-banner",
@@ -72,7 +72,7 @@
       "section_id": "kit-gummy",
       "installments" : 6,
       "title": "Escolha seu <b>Kit Gummy</b>",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
+      "description": "",
       "products": [
         "628ec6f2ac0cb4200fe919d2",
         "628ec707ac0cb4200fe91a11",
@@ -85,7 +85,7 @@
       "section_id": "outros-produtos",
       "installments" : 6,
       "title": "Outros Produtos",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
+      "description": "",
       "products": [
         "628ec5e1ac0cb4200fe917e6",
         "628ec606ac0cb4200fe9185c",
