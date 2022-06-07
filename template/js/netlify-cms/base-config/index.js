@@ -260,59 +260,59 @@ export default options => {
         },        
       ]
     },
-    {
-      label: '[ALPIX] - Lista de Produtos A',
-      name: 'alpix_listaProdutoA',
-      widget: 'object',
-      fields: [
-        {
-          label: 'ID da Seção',
-          required: false,
-          name: 'section_id',
-          widget: 'string'
-        },
-        {
-          label: 'Produtos',
-          name: 'products',
-          widget: 'list',
-          field: {
-            label: 'SKU do produto',
-            name: 'product_id',
-            widget: 'select',
-            options: options.state.routes
-              .filter(({ sku }) => typeof sku === 'string')
-              .map(({ _id, sku }) => ({
-                label: sku,
-                value: _id
-              }))
-          }
-        },
-        {
-          label: 'Título',
-          required: false,
-          name: 'title',
-          widget: 'string'
-        },
-        {
-          label: 'Descrição',
-          required: false,
-          name: 'description',
-          widget: 'text'
-        },
-        {
-          label: 'Texto do Botão',
-          required: false,
-          name: 'btn_text',
-          widget: 'string'
-        },
-        {
-          label: 'Link do Botão',
-          required: false,
-          name: 'btn_link',
-          widget: 'string'
-        }
-      ]
-    },
+    // {
+    //   label: '[ALPIX] - Lista de Produtos A',
+    //   name: 'alpix_listaProdutoA',
+    //   widget: 'object',
+    //   fields: [
+    //     {
+    //       label: 'ID da Seção',
+    //       required: false,
+    //       name: 'section_id',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Produtos',
+    //       name: 'products',
+    //       widget: 'list',
+    //       field: {
+    //         label: 'SKU do produto',
+    //         name: 'product_id',
+    //         widget: 'select',
+    //         options: options.state.routes
+    //           .filter(({ sku }) => typeof sku === 'string')
+    //           .map(({ _id, sku }) => ({
+    //             label: sku,
+    //             value: _id
+    //           }))
+    //       }
+    //     },
+    //     {
+    //       label: 'Título',
+    //       required: false,
+    //       name: 'title',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Descrição',
+    //       required: false,
+    //       name: 'description',
+    //       widget: 'text'
+    //     },
+    //     {
+    //       label: 'Texto do Botão',
+    //       required: false,
+    //       name: 'btn_text',
+    //       widget: 'string'
+    //     },
+    //     {
+    //       label: 'Link do Botão',
+    //       required: false,
+    //       name: 'btn_link',
+    //       widget: 'string'
+    //     }
+    //   ]
+    // },
     {
       label: '[ALPIX] - Lista de Produtos B',
       name: 'alpix_listaProdutoB',
@@ -323,6 +323,12 @@ export default options => {
           required: false,
           name: 'section_id',
           widget: 'string'
+        },
+        {
+          label: 'Quantidade de Parcelas',
+          required: true,
+          name: 'installments',
+          widget: 'number'
         },
         {
           label: 'Produtos',

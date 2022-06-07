@@ -43,7 +43,7 @@ const items = customSort(search.getItems())
             
               const itemData = items[i]
               const imgObj = Array.isArray(itemData.pictures) ? itemData.pictures[0].normal : false
-              console.log(itemData.name + ' - ' +itemData.ad_relevance)
+              //console.log(itemData.name + ' - ' +itemData.ad_relevance)
             %>
               <div class="products-carousel__item">
                 <div class="alpix_product-card  text-center stock-<%- itemData.inStock  %>" data-product="<%= JSON.stringify(itemData) %>">
