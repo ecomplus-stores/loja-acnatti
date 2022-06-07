@@ -4,7 +4,9 @@
   "sections": [
     {
       "type": "responsive-banner",
-      "img": "/img/uploads/mesdosnamorados.png"
+      "img": "/img/uploads/5.png",
+      "link": "#kit-gummy",
+      "mobile_img": "/img/uploads/eu-quero-um-cabelo-assim-1000-1700-px-.png"
     },
     {
       "type": "alpix_chamadaImagem",
@@ -56,6 +58,30 @@
       ]
     },
     {
+      "type": "alpix_listaProdutoB",
+      "section_id": "kit-gummy",
+      "title": "Escolha seu <b>Kit Gummy</b>",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
+      "products": [
+        "628ec6f2ac0cb4200fe919d2",
+        "628ec707ac0cb4200fe91a11",
+        "628ec720ac0cb4200fe91a33",
+        "628ec5e1ac0cb4200fe917e6"
+      ]
+    },
+    {
+      "type": "alpix_listaProdutoB",
+      "section_id": "outros-produtos",
+      "title": "Outros Produtos",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
+      "products": [
+        "628ec5e1ac0cb4200fe917e6",
+        "628ec606ac0cb4200fe9185c",
+        "628ec622ac0cb4200fe918b2",
+        "628ec63bac0cb4200fe918ee"
+      ]
+    },
+    {
       "type": "alpix_sliderDepoimentos",
       "title": "Quem se ama, se cuida",
       "description": "A maneira favorita e mais gostosa de se cuidar é com os produtos Acnatti",
@@ -64,12 +90,12 @@
           "testimonial": {
             "name": "Tuanne Queiroz",
             "image": "/img/uploads/1e3176cb-21bd-42af-867c-540fdef86760.jpg",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+            "text": "Meus cravinhos diminuíram, minha pele ficou mais bonita, meus cabelos estão crescendo muito e ficando mais brilhoso, e agora já indiquei para minha mãe e avó, pois realmente tem vários benefícios."
           }
         },
         {
           "testimonial": {
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.",
+            "text": "Estou comendo as gominhas há 1 mês e já estou sentindo a diferença, não só na pele, mas também no cabelo e unhas. vou continuar, pois só desse jeito para consumir vitaminas",
             "name": "Milena Waltz",
             "image": "/img/uploads/whatsapp-image-2022-05-26-at-11.42.11-am.jpeg"
           }
@@ -77,13 +103,13 @@
         {
           "testimonial": {
             "image": "/img/uploads/whatsapp-image-2022-05-25-at-7.20.08-pm.jpeg",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.",
+            "text": "Fiquei com medo de investir e não gostar, mas após 2 meses de uso, não troco por nada, tudo em mim melhorou, pele, cabelo, unhas e percebi que todos aqui em casa ficam gripados e eu não, e vi que o acnatti ajuda na imunidade. Então já comprei 3 potes e no próximo vou comprar mais e dividir com meu esposo, pois ele ta comendo o meu todo.",
             "name": "Thiago Guimarães"
           }
         },
         {
           "testimonial": {
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.",
+            "text": "Tenho muita dificuldade de consumir vitaminas no dia-a-dia nessa vida corrida, e resolvi experimentar, gente além de gostoso (dar vontade de comer o pote de uma única vez), tive até que esconder, pois meu noivo, estava comendo todo dia depois do almoço. Mas podem comprar de olhos fechados, pois minha pele, meu cabelo e unhas melhoraram muito. Sabonete acnatti pele oleosa, deixa a pele sequinha e cheirosa.",
             "image": "/img/uploads/whatsapp-image-2022-05-25-at-7.18.34-pm.jpeg",
             "name": "Tamirys Ribeiro"
           }
@@ -92,34 +118,9 @@
           "testimonial": {
             "name": "Thayná Ribeiro",
             "image": "/img/uploads/whatsapp-image-2022-05-25-at-7.14.17-pm.jpeg",
-            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+            "text": "Trabalho com harmonização facial e sempre gosto de testar novidades e sem duvida vou indicar para minhas pacientes, pois o Acnatti gummy além de ser delicioso e dar vontade de comer o pote todo ele tem muitos benefícios em sua composição, e a minha pele mudou, estou usando também o sabonete Acnatti Pele Oleosa, o o meu cabelo está crescendo rápido e brilhoso."
           }
         }
-      ]
-    },
-    {
-      "type": "alpix_listaProdutoB",
-      "section_id" : "kit-gummy",
-      "title": "Escolha seu <b>Kit Gummy</b>",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
-      "products": [        
-        "628ec6f2ac0cb4200fe919d2",
-        "628ec707ac0cb4200fe91a11",                
-        "628ec720ac0cb4200fe91a33",
-        "628ec5e1ac0cb4200fe917e6"
-      ]
-    },
-    {
-      "type": "alpix_listaProdutoB",
-      "section_id" : "outros-produtos",
-      "title": "Outros Produtos",
-      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat",
-      
-      "products": [
-        "628ec5e1ac0cb4200fe917e6",
-        "628ec606ac0cb4200fe9185c",
-        "628ec622ac0cb4200fe918b2",
-        "628ec63bac0cb4200fe918ee"
       ]
     },
     {
