@@ -550,3 +550,10 @@ div{
     }
 }
 #header a:hover{color:#fff}
+
+@media(max-width:990px){
+    body{
+        overflow-x: hidden;
+        width:100vw;
+    }
+}
