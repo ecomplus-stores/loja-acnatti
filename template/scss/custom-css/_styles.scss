@@ -319,11 +319,11 @@ div{
     justify-content:center;
 }
 .alpix_product-card .p-price small{
-    color:var(--c-primary);
-    font-size:22px;
-    font-weight:bold;
-    margin-top:-10px;
+    color: var(--c-primary);
+    font-size: 14px;
+    font-weight: 700;
     margin-right: -5px;
+    margin-top: -20px;
 }
 .alpix_product-card .p-installments{}
 .alpix_product-card .p-buy{}
@@ -549,3 +549,4 @@ div{
         color: #F0839A !important;
     }
 }
+#header a:hover{color:#fff}

@@ -1,8 +1,29 @@
 <% 
+const customSort = list => {
+  if (Array.isArray(list)) {
+    return list.sort((a, b) => {
+      if (a && b) {
+        if (a.ad_relevance) {
+          return a.ad_relevance > b.ad_relevance ? -1 : 1
+        } 
+      }
+      return a > b ? -1 : 1
+    })
+  }
+  if (typeof list === 'object' && list !== null) {
+    return customSort(list.results)
+  }
+  console.error(new Error('`list` should be an array'))
+  return []
+}
+
 if (Array.isArray(opt.products) && opt.products.length) {
 const search = new _.EcomSearch()
+
 await search.setProductIds(opt.products).fetch(true)
-const items = _.ecomUtils.alphabeticalSort(search.getItems())
+const items = customSort(search.getItems())
+
+
 %>
 
     <section id="<%- opt.section_id ? opt.section_id : '' %>" class="listaProdutoB py-md-5 py-4">
@@ -19,8 +40,10 @@ const items = _.ecomUtils.alphabeticalSort(search.getItems())
         </div>
         <div class="slick-produtos">
           <% for (let i = 0; i < items.length; i++) { 
+            
               const itemData = items[i]
               const imgObj = Array.isArray(itemData.pictures) ? itemData.pictures[0].normal : false
+              console.log(itemData.name + ' - ' +itemData.ad_relevance)
             %>
               <div class="products-carousel__item">
                 <div class="alpix_product-card  text-center stock-<%- itemData.inStock  %>" data-product="<%= JSON.stringify(itemData) %>">
