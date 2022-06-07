@@ -78,7 +78,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
-if (storefront && storefront.context && storefront.context.resource === 'products') {
+if (storefront && storefront.context && (storefront.context.resource === 'products' || window.location.pathname === '/' || window.location.pathname.match('/search*'))) {
   ecomCart.on('addItem', () => { 
       window.location = '/app/#/cart/' 
   })
