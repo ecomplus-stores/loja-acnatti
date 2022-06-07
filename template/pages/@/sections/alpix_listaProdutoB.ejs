@@ -62,8 +62,8 @@ const items = customSort(search.getItems())
                   <div class="mt-5 p-base_price d-flex align-items-center justify-content-center"><s><%- _.ecomUtils.formatMoney(itemData.base_price) %></s><label><%- (((itemData.base_price / itemData.price) * 100) -100).toFixed(0) %>% OFF</label></div>
                   <!-- <div class="mt-1 p-price d-flex align-items-center"><small><%- itemData.currency_symbol %></small><%- _.ecomUtils.formatMoney(itemData.base_price).replace('R$','') %></div> -->
                   <div class="mt-3 p-installments d-block font-light">Em até <b class="text-primary"><%- opt.installments%>x</b> de</div>
-                  <div class="p-price d-flex align-items-center"><small><%- itemData.currency_symbol %></small><%- _.ecomUtils.formatMoney(itemData.base_price / opt.installments).replace('R$','') %></div>
-                  <div class="p-price-small text-center align-items-center font-light a_p">ou <b class="text-primary font-bold"><%- _.ecomUtils.formatMoney(itemData.base_price) %></b> à vista</div>
+                  <div class="p-price d-flex align-items-center"><small><%- itemData.currency_symbol %></small><%- _.ecomUtils.formatMoney(itemData.price / opt.installments).replace('R$','') %></div>
+                  <div class="p-price-small text-center align-items-center font-light a_p">ou <b class="text-primary font-bold"><%- _.ecomUtils.formatMoney(itemData.price) %></b> à vista</div>
                   
                   <div class="mt-3 p-buy">
                     <button type="button" onclick="ecomCart.addProduct(<%= JSON.stringify(itemData) %>)">Comprar</button>
