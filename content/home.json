@@ -70,7 +70,7 @@
     {
       "type": "alpix_listaProdutoB",
       "section_id": "kit-gummy",
-      "installments" : 6,
+      "installments" : 12,
       "title": "Escolha seu <b>Kit Gummy</b>",
       "description": "",
       "products": [
@@ -83,7 +83,7 @@
     {
       "type": "alpix_listaProdutoB",
       "section_id": "outros-produtos",
-      "installments" : 6,
+      "installments" : 12,
       "title": "Outros Produtos",
       "description": "",
       "products": [
