@@ -1,8 +1,11 @@
 <% 
 if (Array.isArray(opt.products) && opt.products.length) {
 const search = new _.EcomSearch()
+search.setSortOrder('relevance')
 await search.setProductIds(opt.products).fetch(true)
-const items = _.ecomUtils.alphabeticalSort(search.getItems())
+//const items = _.ecomUtils.alphabeticalSort(search.getItems())
+const items = search.getItems()
+
 %>
 
     <section id="<%- opt.section_id ? opt.section_id : '' %>" class="listaProdutoB py-md-5 py-4">
