@@ -566,3 +566,6 @@ div{
 }
 
 .banner{width:100%}
+.payment__gateway--1251[data-label="Boleto bancário"] {
+    display: none !important;
+}
