@@ -4,9 +4,9 @@
   "sections": [
     {
       "type": "responsive-banner",
-      "img": "/img/uploads/5.png",
+      "img": "/img/uploads/eu-quero-um-cabelo-assim-1-.png",
       "link": "#kit-gummy",
-      "mobile_img": "/img/uploads/eu-quero-um-cabelo-assim-1000-1700-px-.png"
+      "mobile_img": "/img/uploads/eu-quero-um-cabelo-assim-1000-1700-px-1-.png"
     },
     {
       "type": "alpix_chamadaImagem",
@@ -70,7 +70,7 @@
     {
       "type": "alpix_listaProdutoB",
       "section_id": "kit-gummy",
-      "installments" : 12,
+      "installments": 12,
       "title": "Escolha seu <b>Kit Gummy</b>",
       "description": "",
       "products": [
@@ -83,7 +83,7 @@
     {
       "type": "alpix_listaProdutoB",
       "section_id": "outros-produtos",
-      "installments" : 12,
+      "installments": 12,
       "title": "Outros Produtos",
       "description": "",
       "products": [
