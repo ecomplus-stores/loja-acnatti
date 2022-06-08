@@ -569,3 +569,10 @@ div{
 .payment__gateway--1251[data-label="Boleto bancário"] {
     display: none !important;
 }
+.content.a_p {
+    display: inline-block !important;
+    * {
+        display: inline-block !important;
+        font-size: var(--a_p) !important;
+    }
+}
