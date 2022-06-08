@@ -142,7 +142,7 @@
         {
           "question": {
             "title": "O que é <strong>Acnatt Beauty Gummy</strong>?",
-            "response": "Acnatti Beauty Gummy é uma gominha deliciosa de pectina vegetal desenvolvida  com 10 vitaminas e minerais perfeitas para pele, A, C, E, B3, B6, B5, Biotina, Iodo, Selênio e Zinco, que auxilia no combate a cravos, espinhas e manchas, agindo de dentro para fora, além de estimular a produção de colágeno e ajuda a inibir os radicais livres responsáveis pelo envelhecimento, por conter vitaminas voltadas para a renovação celular. Veja todos os detalhes <a href='/acnatti-beauty-gummy---durao-30-dias'>clicando aqui</a>"
+            "response": "<h2>Acnatti Beauty Gummy</h2> é uma <h3>gominha deliciosa</h3> de pectina vegetal desenvolvida  com 10 vitaminas e minerais perfeitas para pele, A, C, E, B3, B6, B5, Biotina, Iodo, Selênio e Zinco, que auxilia no combate a <h3>cravos</h3>, <h3>espinhas</h3> e <h3>manchas</h3>, agindo de dentro para fora, além de estimular a produção de colágeno e ajuda a inibir os radicais livres responsáveis pelo envelhecimento, por conter vitaminas voltadas para a renovação celular. Veja todos os detalhes <a href='/acnatti-beauty-gummy---durao-30-dias'>clicando aqui</a>"
           }
         },
         {
@@ -160,7 +160,7 @@
         {
           "question": {
             "title": "Em quanto tempo já posso ver os resultados",
-            "response": "Os resultados podem variar de acordo com o estilo de vida, alimentação e metabolismo de cada indivíduo."
+            "response": "Os <h3>resultados</h3> podem variar de acordo com o estilo de vida, alimentação e metabolismo de cada indivíduo."
           }
         },
         {
