@@ -38,14 +38,14 @@ const items = customSort(search.getItems())
             </small>
           </div>
         </div>
-        <div class="slick-produtos">
+        <div class="<%= opt.section_id == 'kit-gummy' ? 'slick-produtos' : 'row normal' %>">
           <% for (let i = 0; i < items.length; i++) { 
             
               const itemData = items[i]
               const imgObj = Array.isArray(itemData.pictures) ? itemData.pictures[0].normal : false
               //console.log(itemData.name + ' - ' +itemData.ad_relevance)
             %>
-              <div class="products-carousel__item">
+              <div class="<%= opt.section_id == 'kit-gummy' ? 'products-carousel__item' : 'col-6 col-md-3' %> ">
                 <div class="alpix_product-card  text-center stock-<%- itemData.inStock  %>" data-product="<%= JSON.stringify(itemData) %>">
                   <div class="p-picture">
                     <a href="<%= itemData.slug %>">
@@ -59,7 +59,9 @@ const items = customSort(search.getItems())
                   </div>
                   <div class="mt-3 p-name"><a href="<%= itemData.slug %>"><%- itemData.name %></a></div>
                   <div class="mt-3 p-short_description"><%- itemData.short_description %></div>
+                  <% if (itemData.base_price > itemData.price) { %>
                   <div class="mt-5 p-base_price d-flex align-items-center justify-content-center"><s><%- _.ecomUtils.formatMoney(itemData.base_price) %></s><label><%- (((itemData.base_price / itemData.price) * 100) -100).toFixed(0) %>% OFF</label></div>
+                  <% } %>
                   <!-- <div class="mt-1 p-price d-flex align-items-center"><small><%- itemData.currency_symbol %></small><%- _.ecomUtils.formatMoney(itemData.base_price).replace('R$','') %></div> -->
                   <div class="mt-3 p-installments d-block font-light">Em até <b class="text-primary"><%- opt.installments%>x</b> de</div>
                   <div class="p-price d-flex align-items-center"><small><%- itemData.currency_symbol %></small><%- _.ecomUtils.formatMoney(itemData.price / opt.installments).replace('R$','') %></div>

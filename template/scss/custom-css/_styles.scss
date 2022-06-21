@@ -563,6 +563,27 @@ div{
         overflow-x: hidden;
         width:100vw;
     }
+
+    .normal .alpix_product-card{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .normal .alpix_product-card .p-name a{
+        line-height: initial;
+        display: block;
+    }
+    .normal .alpix_product-card .p-price {
+        font-size: 28px;
+    }
+    .normal .alpix_product-card .p-buy button {
+        line-height: 36px;
+        font-size: 14px;
+    }
+
+
 }
 
 .banner{width:100%}
@@ -577,3 +598,15 @@ div{
         padding: 0 3px;
     }
 }
+
+.alpix_product-card .p-picture picture img{max-height:175px}
+
+.selos_ img{
+    height: 75px;
+    filter: brightness(0) invert(1);
+}
+
+.bg-footer{
+    background:var(--c-primary)
+}
+.footer__credits{border:0;padding-top:0}
