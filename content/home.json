@@ -58,16 +58,6 @@
       ]
     },
     {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 16,
-      "page": 1,
-      "sort": "relevance",
-      "title": "Mais Vendidos <small>Os queridinhos do Empório</small>",
-      "headless": false,
-      "link": ""
-    },
-    {
       "type": "alpix_listaProdutoB",
       "section_id": "kit-gummy",
       "installments": 12,

@@ -13,13 +13,11 @@ const customSort = list => {
   if (typeof list === 'object' && list !== null) {
     return customSort(list.results)
   }
-  console.error(new Error('`list` should be an array'))
+  //console.error(new Error('`list` should be an array'))
   return []
 }
-
 if (Array.isArray(opt.products) && opt.products.length) {
 const search = new _.EcomSearch()
-
 await search.setProductIds(opt.products).fetch(true)
 const items = customSort(search.getItems())
 
