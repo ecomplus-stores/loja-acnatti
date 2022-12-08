@@ -86,6 +86,15 @@
       ]
     },
     {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "collection_id": null,
+      "title": "",
+      "headless": false,
+      "limit": 12,
+      "page": 1
+    },
+    {
       "type": "alpix_sliderDepoimentos",
       "title": "Quem se ama, se cuida",
       "description": "A maneira favorita e mais gostosa de se cuidar é com os produtos Acnatti",
