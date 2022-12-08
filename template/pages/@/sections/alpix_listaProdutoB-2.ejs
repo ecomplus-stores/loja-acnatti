@@ -1,0 +1,55 @@
+<% 
+
+const customSort = list => {
+  if (Array.isArray(list)) {
+    return list.sort((a, b) => {
+      if (a && b) {
+        if (a.ad_relevance) {
+          return a.ad_relevance > b.ad_relevance ? -1 : 1
+        } 
+      }
+      return a > b ? -1 : 1
+    })
+  }
+  if (typeof list === 'object' && list !== null) {
+    return customSort(list.results)
+  }
+  //console.error(new Error('`list` should be an array'))
+  return []
+}
+if (Array.isArray(opt.products) && opt.products.length) {
+const search = new _.EcomSearch()
+await search.setProductIds(opt.products).fetch(true)
+const allItems = await search.getItems()
+const items = customSort(allItems) || allItems
+
+%>
+
+    <section id="<%- opt.section_id ? opt.section_id : '' %>" class="listaProdutoB py-md-5 py-4">
+      <div class="container py-md-5 py-4">
+        <div class="row mb-md-5 mb-3 pb-4  justify-content-center">
+          <div class="col-12 col-md-8">
+            <h3 class="a_title medel a_h3 text-center">
+              <%- opt.title %>
+            </h3>
+            <small class="a_sub font-light text-center d-block">
+              <%- opt.description %>
+            </small>
+          </div>
+        </div>
+        <div class="<%= opt.section_id == 'kit-gummy' ? 'slick-produtos' : 'row normal' %>">
+          <% for (let i = 0; i < items.length; i++) { 
+            
+              const itemData = items[i]
+              const imgObj = Array.isArray(itemData.pictures) ? itemData.pictures[0].normal : false
+              //console.log(itemData.name + ' - ' +itemData.ad_relevance)
+            %>
+            <%- await include('@/sections/inc/product-item', {
+              _, opt: { item: items[i] }
+            }) %>             
+          <% } %>
+        </div>
+      </div>
+    </section>  
+  <% } %>
+  
