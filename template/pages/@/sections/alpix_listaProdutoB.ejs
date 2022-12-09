@@ -19,9 +19,10 @@ const customSort = list => {
 }
 if (Array.isArray(opt.products) && opt.products.length) {
 const search = new _.EcomSearch()
-await search.setProductIds(opt.products).fetch(true)
+await search.setProductIds(opt.products).fetch()
 const allItems = await search.getItems()
 const items = customSort(allItems) || allItems
+console.log(items)
 
 %>
 
@@ -45,7 +46,7 @@ const items = customSort(allItems) || allItems
               //console.log(itemData.name + ' - ' +itemData.ad_relevance)
             %>
               <div class="<%= opt.section_id == 'kit-gummy' ? 'products-carousel__item' : 'col-6 col-md-3' %> ">
-                <div class="alpix_product-card  text-center stock-<%- itemData.inStock  %>" data-product="<%= JSON.stringify(itemData) %>">
+                <div class="alpix_product-card  text-center stock-<%- itemData.inStock  %>" data-product="<%= JSON.stringify(itemData) %>" data-to-render="true">
                   <div class="p-picture">
                     <a href="<%= itemData.slug %>">
                     <picture>

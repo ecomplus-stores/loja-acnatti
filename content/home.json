@@ -58,32 +58,31 @@
       ]
     },
     {
-      "type": "alpix_listaProdutoB-2",
-      "section_id": "kit-gummy",
-      "installments": 12,
+      "type": "collection-shelf",
+      "shuffle": false,
+      "collection_id": null,
       "title": "Escolha seu <b>Kit Gummy</b>",
-      "description": "",
-      "products": [
-        "628ec5e1ac0cb4200fe917e6",
-        "628ec6f2ac0cb4200fe919d2",
-        "628ec707ac0cb4200fe91a11",
-        "628ec720ac0cb4200fe91a33",
-        "628ec606ac0cb4200fe9185c"
-      ]
+      "headless": false,
+      "limit": 4,
+      "page": 1
     },
     {
-      "type": "alpix_listaProdutoB",
-      "section_id": "outros-produtos",
-      "installments": 12,
+      "type": "collection-shelf",
+      "shuffle": true,
+      "collection_id": "6392b2cf73321213f80be4be",
+      "title": "Escolha seu <b>Sabonete</b>",
+      "headless": false,
+      "limit": 12,
+      "page": 1
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "collection_id": "6392b3c773321213f80be5c0",
       "title": "Outros Produtos",
-      "description": "",
-      "products": [
-        "628ec606ac0cb4200fe9185c",
-        "628ec622ac0cb4200fe918b2",
-        "628ec63bac0cb4200fe918ee",
-        "628ec6deac0cb4200fe919b3",
-        "628ec5e1ac0cb4200fe917e6"
-      ]
+      "headless": false,
+      "limit": 12,
+      "page": 1
     },
     {
       "type": "alpix_sliderDepoimentos",

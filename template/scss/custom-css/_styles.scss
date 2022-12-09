@@ -610,3 +610,82 @@ div{
     background:var(--c-primary)
 }
 .footer__credits{border:0;padding-top:0}
+.a_title b {
+    color: var(--c-primary);
+}
+.product-card {
+    text-align: center;
+}
+.p-name {
+    color: #000;
+font-size: var(--a_p);
+font-weight: 600;
+}
+.p-short_description {
+    color: #000;
+    font-size: var(--a_p);
+    font-weight: 300;
+}
+
+.glide__arrow {
+    background: var(--c-primary);
+    border-radius: 50%;
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    cursor: pointer;
+    height: 48px;
+    line-height: 48px;
+    opacity: 1;
+    padding: 0;
+    width: 48px;
+    i {
+        font-size: 30px;
+        color: #fff;
+    }
+}
+.product-card {
+    .prices__compare {
+        order: -2
+    }
+    .prices__value {
+        color: var(--c-primary);
+        font-weight: 600;
+        font-size: 14px;
+        + span {
+            order: -1;
+        }
+        &::before {
+            content: 'ou ';
+            color: var(--text);
+            font-weight: 400;
+        }
+        &::after {
+            content: 'à vista';
+            color: var(--text);
+            font-weight: 400;
+        }
+    }
+    .prices__installments {
+        color: var(--c-primary);
+        &::before {
+            content: 'Em até ';
+            color: var(--text);
+            font-family: NuberNext,sans-serif;
+        }
+        span {
+            color: var(--c-primary);
+            font-size: 42px;
+            font-weight: 700;
+            &::before {
+                font-size: 13px;
+                color: var(--text);
+                content: 'de \a';
+                white-space: pre;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.product-card__buy.fade {
+    opacity: 1;
+}
+
