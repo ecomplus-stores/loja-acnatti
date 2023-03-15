@@ -64,7 +64,8 @@
       "title": "Escolha seu <b>Kit Gummy</b>",
       "headless": false,
       "limit": 4,
-      "page": 1
+      "page": 1,
+      "sort": "offers"
     },
     {
       "type": "collection-shelf",
